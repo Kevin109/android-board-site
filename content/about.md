@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Android Board"
 description: "Learn more about Android Board — a technical hub for ARM-based Android SBCs, display integration, and embedded solutions."
 ---
 

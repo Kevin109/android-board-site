@@ -1,14 +1,48 @@
-{{ define "title" }}{{ if .IsHome }}Home{{ else }}{{ .Title }}{{ end }}{{ end }}
+{{ define "title" }}Posts | {{ .Site.Title }}{{ end }}
+
 {{ define "main" }}
-  <h1>{{ if .IsHome }}Latest Posts{{ else }}{{ .Title }}{{ end }}</h1>
-  <ul class="post-list">
-    {{ range .Paginator.Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-      </li>
-    {{ else }}
-      <li>No posts yet.</li>
-    {{ end }}
-  </ul>
+<section class="post-hero container">
+  <h1>Posts</h1>
+  <p class="post-hero-sub">
+    Technical notes and deep dives on Android SBCs, ARM-based boards, HMI, IoT gateways, and display integration.
+  </p>
+</section>
+
+<section class="post-grid container">
+  {{ range .Paginator.Pages }}
+    <article class="post-card">
+      <a class="post-card-link" href="{{ .RelPermalink }}">
+        <h2 class="post-card-title">{{ .Title }}</h2>
+        <div class="post-card-meta">
+          <span>{{ .Date.Format "2006-01-02" }}</span>
+          {{ with .ReadingTime }}<span>· {{ . }} min read</span>{{ end }}
+          {{ with .Params.tags }}
+            <span class="dot">·</span>
+            <ul class="post-tags">
+              {{ range first 3 . }}
+                <li>#{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+        <p class="post-card-excerpt">
+          {{ with .Params.description }}
+            {{ . }}
+          {{ else }}
+            {{ .Summary | plainify | truncate 140 }}
+          {{ end }}
+        </p>
+        <span class="post-card-cta">Read →</span>
+      </a>
+    </article>
+  {{ end }}
+</section>
+
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pager container">
+  {{ with .Paginator.Prev }}<a class="pager-btn" href="{{ .URL }}">← Newer</a>{{ end }}
+  <span class="pager-info">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+  {{ with .Paginator.Next }}<a class="pager-btn" href="{{ .URL }}">Older →</a>{{ end }}
+</nav>
+{{ end }}
 {{ end }}
