@@ -21,6 +21,7 @@ An **ARM-based Android SBC** is a single circuit board that integrates:
 - Networking capabilities (Wi-Fi, Ethernet, Bluetooth, 4G/5G)
 
 Unlike generic SBCs that may run Linux or Windows, these boards run the **Android OS** — offering a familiar, touch-friendly user interface, app-based software ecosystem, and strong multimedia performance.
+<img src="/images/rk3566.webp" alt="rockchip rk3566 board"/>
 
 ---
 

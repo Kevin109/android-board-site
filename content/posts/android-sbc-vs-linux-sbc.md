@@ -14,6 +14,8 @@ This guide provides a **detailed, side-by-side comparison** to help you decide w
 
 Before we dive into the comparison, let’s define each platform.
 
+<img src="/images/images1.jpeg" alt="rockchip px30 board"/>
+
 ### What is an Android SBC?
 An **Android SBC** is a single board computer running the Android operating system, usually based on ARM processors.  
 It offers:
