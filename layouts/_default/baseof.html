@@ -10,6 +10,16 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  {{ if .IsHome }}<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://android-board.com/#organization",
+  "name": "Android Board",
+  "url": "https://android-board.com/",
+  "logo": "https://android-board.com/android-chrome-512x512.png"
+}
+</script>{{ end }}
 </head>
 
 <body>
