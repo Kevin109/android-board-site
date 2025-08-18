@@ -98,8 +98,6 @@ For a more detailed comparison and practical guidance, check out this in-depth a
 4. **I/O Expansion** – Plan for GPIO, UART, I²C, SPI, and other peripherals.
 5. **Long-Term Support** – Check for firmware updates and Android version upgrades.
 
-For projects needing tailored solutions, a **custom embedded HMI design** service can integrate exactly the hardware and OS features you need. [Learn more about embedded HMI](https://www.rocktech.com.hk/custom-embedded-hmi/).
-
 ---
 
 ## 6. Development Tips
