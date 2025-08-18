@@ -86,7 +86,7 @@ Android SBCs can collect sensor data, process it locally, and transmit it to the
 | **App Compatibility** | Excellent for mobile apps              | Limited to certain Android-x86 builds  |
 | **Thermal Design**    | Easier to cool                         | Requires active cooling in many cases  |
 
-For a more detailed comparison and practical guidance, check out this in-depth article on [ARM-Based Android SBCs](https://android-board.com/posts/arm-based-android-sbc/).
+For a more detailed comparison and practical guidance, check out this in-depth article on [Android SBCs Overview](https://embedded-sbc.com/posts/android-sbc-overview/).
 
 ---
 
