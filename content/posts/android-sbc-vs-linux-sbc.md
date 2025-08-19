@@ -120,6 +120,9 @@ However, when **UI/UX is critical**, Android SBCs can save development costs by 
 - **Android SBCs** are expected to expand in AI-enabled devices, edge computing for smart cities, and multimedia-rich kiosks.
 - **Linux SBCs** will remain strong in industrial automation, autonomous vehicles, and robotics.
 
+Beyond the choice of operating system, the **hardware architecture** (ARM vs x86) also plays a decisive role in performance, power efficiency, and ecosystem compatibility.  
+For an in-depth look at this topic, see: [ARM vs x86: What’s Best for Industrial SBCs?](https://industrial-sbc.com/articles/arm-sbc-vs-x86-sbc/).
+
 ---
 
 ## 9. Decision Framework
